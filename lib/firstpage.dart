@@ -62,7 +62,7 @@ class _FirstpageState extends State<Firstpage> {
                             width: double.infinity,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(15),
-                              border: Border.all(color: Colors.blue),
+                              border: Border.all(color: Colors.blue, width: 4),
                             ),
                             child: Padding(
                               padding: const EdgeInsets.all(8.0),
@@ -70,28 +70,38 @@ class _FirstpageState extends State<Firstpage> {
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text("Post:${post.id}",
-                                      style: TextStyle(fontSize: 15)),
+                                  Text("Id:${post.id}",
+                                      style: TextStyle(
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.bold)),
                                   SizedBox(
                                     height: 15,
                                   ),
-                                  Text("Post:${post.title}",
-                                      style: TextStyle(fontSize: 15)),
+                                  Text("Title:${post.title}",
+                                      style: TextStyle(
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.bold)),
                                   SizedBox(
                                     height: 15,
                                   ),
                                   Text(
-                                    "Post:${post.body}",
-                                    style: TextStyle(fontSize: 15),
+                                    "Body:${post.body}",
+                                    style: TextStyle(
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.bold),
                                     textAlign: TextAlign.justify,
                                   ),
                                   SizedBox(
                                     height: 15,
                                   ),
-                                  Text("Post:${post.tags}",
-                                      style: TextStyle(fontSize: 15)),
-                                  Text("Post:${post.reactions}",
-                                      style: TextStyle(fontSize: 15)),
+                                  Text("Tags:${post.tags}",
+                                      style: TextStyle(
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.bold)),
+                                  Text("Reactions:${post.reactions}",
+                                      style: TextStyle(
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.bold)),
                                 ],
                               ),
                             ),
